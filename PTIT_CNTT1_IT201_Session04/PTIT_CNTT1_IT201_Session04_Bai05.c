@@ -41,7 +41,7 @@ void binarySearch(int *arr, int size) {
    int left = 0;
    int right = size-1;
    int mid;
-   int check;
+   int check = 1;
    while (left <= right) {
       mid = (left + right)/2;
       if (arr[mid] == value){
