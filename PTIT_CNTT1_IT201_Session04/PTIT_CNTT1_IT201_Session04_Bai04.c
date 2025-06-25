@@ -25,11 +25,11 @@ void findLastItem( int arr[], int size) {
    scanf("%d", &value);
    for (int i = size-1; i>=0; i--) {
       if (arr[i] == value) {
-         value = i;
+         printf("%d", value);
          break;
       }
    }
-   printf("%d", value);
+   
 }
 int main(){
    int *arr = NULL;
