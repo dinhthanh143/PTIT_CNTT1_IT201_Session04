@@ -22,7 +22,7 @@ int *insertArray(int *arr, int *size) {
 }
 void findMin(int arr[], int size) {
    int min = arr[0];
-   int index;
+   int index = 0;
    for (int i = 1 ; i<size; i++) {
       if (min>arr[i]) {
          min = arr[i];
