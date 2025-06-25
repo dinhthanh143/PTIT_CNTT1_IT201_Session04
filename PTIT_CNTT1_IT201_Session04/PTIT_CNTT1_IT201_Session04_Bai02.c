@@ -21,7 +21,7 @@ int *insertArray(int *arr, int *size) {
 }
 void findMax(int arr[], int size) {
    int max = arr[0];
-   int index;
+   int index = 0;
    for ( int i = 1; i<size; i++) {
       if (max<arr[i]) {
          max = arr[i];
