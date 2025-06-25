@@ -19,21 +19,27 @@ int *insertArray(int *arr, int *size) {
    }
    return arr;
 }
-int searchItem(int arr[], int size) {
-   int value;
-   printf("moi nhap so muon tim:");
-   scanf("%d", &value);
+int searchItem(int arr[], int size, int value) {
    for (int i = 0; i <size; i++) {
       if (arr[i] == value ) {
          return i;
       }
    }
+   return -1;
 }
 int main(){
    int *arr = NULL;
    int size;
    arr = insertArray(arr, &size);
-   printf("%d", searchItem(arr, size));
+     int value;
+   printf("moi nhap so muon tim:");
+   scanf("%d", &value);
+   int index = searchItem(arr,size,value);
+   if(index != -1){
+      printf("%d", index);
+   }else{
+      printf("phan tu khong ton tai trong mang");
+   }
    free(arr);
 
    return 0;
